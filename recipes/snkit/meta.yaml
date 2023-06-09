@@ -28,8 +28,11 @@ test:
   imports:
     - snkit
     - snkit.network
+  requires:
+    - pytest
   commands:
     - pip check
+    - pytest tests
   requires:
     - pip
 
@@ -42,4 +45,3 @@ about:
 extra:
   recipe-maintainers:
     - tomalrussell
-
